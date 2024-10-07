@@ -1,0 +1,10 @@
+import styles from "@/app/(beforelogin)/page.module.css"
+export default function BeforeLoginLayout({
+    children, modal
+  }: {
+    children: React.ReactNode,
+    modal: React.ReactNode
+  }) {
+    return <div className={styles.container}>비포로그인{children}{modal}</div>;
+  }
+  
