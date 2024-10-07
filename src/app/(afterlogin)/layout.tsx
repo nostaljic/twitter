@@ -1,4 +1,7 @@
 import styles from "@/app/(afterlogin)/layout.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import XLogo from "../../../public/logo_x.png"
 export default function AfterLoginLayout({
   children,
 }: Readonly<{
@@ -8,7 +11,13 @@ export default function AfterLoginLayout({
     <div className={styles.container}>
       <header className={styles.leftSectionWrapper}>
         <section className={styles.leftSection}>
-          <div className={styles.leftSectionFixed}></div>
+          <div className={styles.leftSectionFixed}>
+            <Link className={styles.logo} href="/home">
+              <div className={styles.logoPill}>
+                <Image width={40} height={40} src={XLogo} alt=""></Image>
+              </div>
+            </Link>
+          </div>
         </section>
       </header>
       <div className={styles.rightSectionWrapper}>

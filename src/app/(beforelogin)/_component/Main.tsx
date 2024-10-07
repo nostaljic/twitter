@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import xLogo from "../../../../public/logo_x.png"
+import XLogo from "../../../../public/logo_x.png"
 import styles from "@/app/(beforelogin)/_component/main.module.css"
 
 export default function Main(){
   return (
     <>
     <div className={styles.left}>
-      <Image src={xLogo} alt="logo"/>
+      <Image src={XLogo} alt="logo"/>
     </div>
     <div className={styles.right}>
       <h1>지금 일어나고 있는 일</h1>
