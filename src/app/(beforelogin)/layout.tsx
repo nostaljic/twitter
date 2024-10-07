@@ -1,4 +1,4 @@
-import styles from "@/app/(beforelogin)/page.module.css"
+import styles from "@/app/(beforelogin)/_component/main.module.css"
 export default function BeforeLoginLayout({
     children, modal
   }: {
