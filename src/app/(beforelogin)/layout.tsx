@@ -5,6 +5,6 @@ export default function BeforeLoginLayout({
     children: React.ReactNode,
     modal: React.ReactNode
   }) {
-    return <div className={styles.container}>비포로그인{children}{modal}</div>;
+    return <div className={styles.container}>{children}{modal}</div>;
   }
   
